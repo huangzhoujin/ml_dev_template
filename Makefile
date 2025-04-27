@@ -44,7 +44,7 @@ format:
 ## Download Data from storage system
 .PHONY: sync_data_down
 sync_data_down:
-	aws s3 sync s3://gp-projectx/ml_dev_template/data/ \
+	aws s3 sync s3://dl-projectx/ml_dev_template/data/ \
 		data/ 
 	
 
@@ -52,7 +52,7 @@ sync_data_down:
 .PHONY: sync_data_up
 sync_data_up:
 	aws s3 sync data/ \
-		s3://gp-projectx/ml_dev_template/data/
+		s3://dl-projectx/ml_dev_template/data/
 	
 
 
