@@ -2,18 +2,38 @@
 requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
+
 [project]
 name = "ml_dev_template"
 version = "0.0.1"
 description = "A machine learning template project"
 authors = [
-  { name = "Zhoujin Huang" },
+    { name = "Zhoujin Huang" },
 ]
 license = { file = "LICENSE" }
 readme = "README.md"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License"
+
+]
+dependencies = [
+    "awscli",
+    "loguru",
+    "mkdocs",
+    "pip",
+    "pytest",
+    "python-dotenv",
+    "ruff",
+    "tqdm",
+    "typer",
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "scipy",
+    "matplotlib",
+    "seaborn",
+    "scikit-image",
+    "pillow",
 ]
 requires-python = "~=3.12.0"
 
